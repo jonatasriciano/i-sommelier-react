@@ -5,7 +5,7 @@ import LoginForm from './components/users/LoginForm';
 import RegisterForm from './components/users/RegisterForm';
 import ProfilePage from './pages/ProfilePage';
 import QuestionnairePage from './pages/QuestionnairePage';
-import Layout from './components/Layout';
+import Layout from './components/common/Layout';
 
 const App: React.FC = () => {
     const isAuthenticated = !!localStorage.getItem('token'); // Verifica se o usuário está autenticado

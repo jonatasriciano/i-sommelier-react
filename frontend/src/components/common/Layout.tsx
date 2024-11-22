@@ -1,12 +1,16 @@
-// /Users/jonatas/Documents/Projects/i-sommelier-react/frontend/src/components/Layout.tsx
+// Import necessary modules from React and Material-UI
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 
+// Import the logo image
+import logo from '../../assets/images/logo.png';
 
+// Define the props type for the Layout component
 interface LayoutProps {
     children: React.ReactNode;
 }
 
+// Create and export the Layout component
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <Box
@@ -14,11 +18,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             flexDirection="column"
             minHeight="100vh"
         >
-            {/* Barra de navegação */}
+            {/* Navigation bar */}
             <AppBar position="static">
                 <Toolbar>
-                    {/* Exibe o logo ao lado do título */}
+                    {/* Display the logo alongside the title */}
                     <Box display="flex" alignItems="center" sx={{ flexGrow: 1 }}>
+                        <img src={logo} alt="Logo" style={{ height: '40px', marginRight: '10px' }} />
                         <Typography variant="h6" component="div">
                             I-Sommelier
                         </Typography>
@@ -26,12 +31,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </Toolbar>
             </AppBar>
 
-            {/* Conteúdo principal */}
+            {/* Main content */}
             <Box flex={1} mt={2} mb={2}>
                 {children}
             </Box>
 
-            {/* Rodapé */}
+            {/* Footer */}
             <Box
                 component="footer"
                 sx={{
