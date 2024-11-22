@@ -1,21 +1,42 @@
 services:
-  web:
-    build: .
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     ports:
-      - "3000:3000"
+      - "3000:3000" # Mapeia a porta 3000 para o host
     volumes:
-      - .:/usr/src/app
-      - /usr/src/app/node_modules
+      - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules # Ignora node_modules no hot reload
     environment:
-      - CHOKIDAR_USEPOLLING=true
+      - CHOKIDAR_USEPOLLING=true # Ativa o hot reload no sistema de arquivos do Docker
+    stdin_open: true
+    tty: true
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000" # Mapeia a porta 4000 para o host
+    volumes:
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules # Ignora node_modules no hot reload
+    environment:
+      - NODE_ENV=development # Garante o ambiente de desenvolvimento
+    stdin_open: true
+    tty: true
+
   db:
-    image: postgres
+    image: postgres:15 # Usa uma versão específica para evitar incompatibilidades
     environment:
       POSTGRES_DB: isommelier
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: sommelier
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432" # Porta padrão para acessar o banco de dados
 
 volumes:
   postgres_data:
