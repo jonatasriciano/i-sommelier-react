@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: isommelier
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: sommelier
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
