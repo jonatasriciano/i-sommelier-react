@@ -31,7 +31,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/bg-presentation.png";
 
 function Presentation() {
   return (
@@ -41,7 +41,7 @@ function Presentation() {
         action={{
           type: "external",
           route: "https://github.com/jonatasriciano/i-sommelier-react",
-          label: "free download",
+          label: "Try now",
           color: "info",
         }}
         sticky
@@ -49,40 +49,47 @@ function Presentation() {
       <MKBox
         minHeight="75vh"
         width="100%"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
         sx={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "top",
-          display: "grid",
-          placeItems: "center",
+          backgroundPosition: "center",
         }}
       >
-        <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
-            <MKTypography
-              variant="h1"
-              color="white"
-              mt={-6}
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
-            >
-              I-Sommelier{" "}
-            </MKTypography>
-            <MKTypography
-              variant="body1"
-              color="white"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
-            </MKTypography>
-          </Grid>
+        <Container
+          sx={{
+            backgroundColor: "rgba(255, 255, 255, 0.5)", // Semi-transparent black background
+            borderRadius: "12px", // Rounded corners for the background
+            padding: "20px", // Padding around the text
+            textAlign: "center",
+          }}
+        >
+          {/* Main title */}
+          <MKTypography
+            variant="h1"
+            color="primary"
+            textAlign="center"
+            mb={1} // Adds margin below the title
+            sx={({ breakpoints, typography: { size } }) => ({
+              [breakpoints.down("md")]: {
+                fontSize: size["3xl"],
+              },
+            })}
+          >
+            I-Sommelier
+          </MKTypography>
+
+          {/* Subtitle */}
+          <MKTypography
+            variant="body1"
+            color="primary"
+            textAlign="center"
+          >
+            What's your wine for today?
+          </MKTypography>
         </Container>
       </MKBox>
       <Card

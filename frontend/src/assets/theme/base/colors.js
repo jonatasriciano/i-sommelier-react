@@ -1,9 +1,7 @@
-
-
 /**
  * The base colors for the I-Sommelier.
- * You can add new color using this file.
- * You can customized the colors for the entire I-Sommelier using thie file.
+ * You can add new colors using this file.
+ * You can customize the colors for the entire I-Sommelier using this file.
  */
 
 export default {
@@ -32,8 +30,8 @@ export default {
   },
 
   primary: {
-    main: "#e91e63",
-    focus: "#e91e63",
+    main: "#BB2700", // Updated primary main color
+    focus: "#9B1E00", // Darker variation for focus
   },
 
   secondary: {
@@ -85,8 +83,8 @@ export default {
 
   gradients: {
     primary: {
-      main: "#EC407A",
-      state: "#D81B60",
+      main: "#BB2700", // Gradient start color
+      state: "#9B1E00", // Gradient end color
     },
 
     secondary: {
@@ -189,8 +187,8 @@ export default {
 
   badgeColors: {
     primary: {
-      background: "#f8b3ca",
-      text: "#cc084b",
+      background: "#FF8A66", // Light variation of primary for badges
+      text: "#BB2700", // Main primary color for text
     },
 
     secondary: {
@@ -230,7 +228,7 @@ export default {
   },
 
   coloredShadows: {
-    primary: "#e91e62",
+    primary: "#BB2700", // Primary shadow color
     secondary: "#110e0e",
     info: "#00bbd4",
     success: "#4caf4f",

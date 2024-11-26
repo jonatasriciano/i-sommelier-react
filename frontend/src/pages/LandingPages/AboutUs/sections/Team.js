@@ -12,10 +12,12 @@ import MKTypography from "components/MKTypography";
 import HorizontalTeamCard from "examples/Cards/TeamCards/HorizontalTeamCard";
 
 // Images
-import team1 from "assets/images/team-5.jpg";
-import team2 from "assets/images/bruce-mars.jpg";
-import team3 from "assets/images/ivana-squares.jpg";
-import team4 from "assets/images/ivana-square.jpg";
+import hornby from "assets/images/squad/hornby.jpg";
+import jonatas from "assets/images/squad/jonatas.jpg";
+import aline from "assets/images/squad/aline.jpg";
+import josemar from "assets/images/squad/josemar.jpg";
+import naomy from "assets/images/squad/naomy.jpg";
+import katia from "assets/images/squad/katia.jpg";
 
 function Team() {
   return (
@@ -35,8 +37,7 @@ function Team() {
               The Executive Team
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
+              At InnoTech Solutions, we are driven by one core mission: to pioneer innovative tech solutions that address real-world challenges and enhance the quality of life for individuals and communities worldwide.
             </MKTypography>
           </Grid>
         </Grid>
@@ -44,40 +45,60 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team1}
-                name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={hornby}
+                name="Hornby Tung"
+                position={{ color: "info", label: "CEO" }}
+                description="With over 25 years of entrepreneurial experience, Hornby drives InnoTech with his strategic vision and ability to seize opportunities, building lasting success for the company and its clients."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={aline}
+                name="Aline Silveira"
+                position={{ color: "info", label: "COO" }}
+                description="Aline’s extensive legal background and operational leadership ensure smooth company operations, from administrative management to human resources."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
+            <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team3}
-                name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={jonatas}
+                name="Jonatas Riciano Silveira"
+                position={{ color: "info", label: "CIO" }}
+                description="With 20 years of transforming complex tech challenges into innovative solutions, Jonatas leads our tech strategy, ensuring cutting-edge implementation."
               />
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <MKBox mb={{ xs: 1, lg: 0 }}>
+            <MKBox mb={1}>
               <HorizontalTeamCard
-                image={team4}
-                name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={katia}
+                name="Katia Tung"
+                position={{ color: "info", label: "CAO" }}
+                description="Katia's expertise in operations and team management spans over three decades, bringing excellence in organization and client engagement."
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={naomy}
+                name="Naomy M Tung"
+                position={{ color: "info", label: "CTO" }}
+                description="Naomy’s expertise in software development ensures that InnoTech remains at the forefront of technological trends, spearheading innovation."
+              />
+            </MKBox>
+          </Grid>
+          <Grid item xs={12} lg={6}>
+            <MKBox mb={1}>
+              <HorizontalTeamCard
+                image={josemar}
+                name="Josemar Barros"
+                position={{ color: "info", label: "CFO" }}
+                description="With a decade of financial expertise, Josemar drives our financial strategy, ensuring stability and growth."
               />
             </MKBox>
           </Grid>

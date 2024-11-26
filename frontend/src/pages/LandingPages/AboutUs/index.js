@@ -17,7 +17,6 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes
@@ -76,32 +75,32 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              Our Vision
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              We envision a future where technology becomes a beacon of relief, seamlessly improving daily
+              lives and empowering people to overcome their most pressing problems. At InnoTech Solutions, we
+              are committed to building solutions that matter.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
-            <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
+            <MKTypography
+              variant="h1"
+              color="white"
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
+              mt={4} // Espaçamento entre seções
+            >
+              Our Mission
             </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox>
+            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
+              InnoTech Solutions is dedicated to identifying and solving real-world problems through
+              cutting-edge technology. We create tangible solutions that streamline processes, provide relief,
+              and contribute to a more sustainable and connected world. Whether through AI, machine learning,
+              or emerging tech trends, our innovations aim to transform the future.
+            </MKTypography>
+
           </Grid>
         </Container>
       </MKBox>
@@ -116,7 +115,6 @@ function AboutUs() {
       >
         <Information />
         <Team />
-        <Featuring />
         <Newsletter />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
