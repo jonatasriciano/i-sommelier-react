@@ -54,7 +54,6 @@ function Information() {
           <Grid item xs={12} lg={4}>
             <CenteredBlogCard
               image={logo}
-              title="For the i-Sommelier App"
               description="Introducing i-Sommelier, the revolutionary app that transforms your wine experience. Powered by advanced AI and expert oenology, i-Sommelier provides personalized wine recommendations tailored to your taste and occasion. Whether you're a seasoned wine lover or just beginning your journey, our app makes selecting the perfect bottle effortless, ensuring every sip is a memorable one."
               action={{
                 type: "external",

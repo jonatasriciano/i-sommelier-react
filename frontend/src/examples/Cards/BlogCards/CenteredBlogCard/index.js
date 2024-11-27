@@ -34,6 +34,7 @@ function CenteredBlogCard({ image, title, description, action, bgColor }) {
           zIndex={1}
           bgColor="white"
           shadow="md"
+          padding={2}
         />
 
       </MKBox>

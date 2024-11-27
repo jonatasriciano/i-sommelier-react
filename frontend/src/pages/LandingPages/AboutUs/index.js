@@ -34,11 +34,10 @@ function AboutUs() {
         action={{
           type: "external",
           route: "https://github.com/jonatasriciano/i-sommelier-react",
-          label: "free download",
-          color: "default",
+          label: "Try now",
+          color: "primary",
         }}
-        transparent
-        light
+        sticky
       />
       <MKBox
         minHeight="75vh"
