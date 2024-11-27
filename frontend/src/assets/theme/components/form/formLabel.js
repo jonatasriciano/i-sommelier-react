@@ -1,6 +1,6 @@
 
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import colors from "assets/theme/base/colors";
 
 const { text } = colors;

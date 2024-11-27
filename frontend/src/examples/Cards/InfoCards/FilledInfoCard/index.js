@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

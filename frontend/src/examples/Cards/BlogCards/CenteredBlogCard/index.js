@@ -1,5 +1,3 @@
-
-
 // react-router components
 import { Link } from "react-router-dom";
 
@@ -10,14 +8,21 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 
-function CenteredBlogCard({ image, title, description, action }) {
+// Import the colors from the theme
+import colors from "assets/theme/base/colors";
+
+function CenteredBlogCard({ image, title, description, action, bgColor }) {
   return (
-    <Card>
+    <Card
+      sx={{
+        backgroundColor: bgColor || colors.background.default
+      }}
+    >
       <MKBox position="relative" borderRadius="lg" mx={2} mt={-3}>
         <MKBox
           component="img"
@@ -27,29 +32,17 @@ function CenteredBlogCard({ image, title, description, action }) {
           width="100%"
           position="relative"
           zIndex={1}
-        />
-        <MKBox
-          borderRadius="lg"
+          bgColor="white"
           shadow="md"
-          width="100%"
-          height="100%"
-          position="absolute"
-          left={0}
-          top={0}
-          sx={{
-            backgroundImage: `url(${image})`,
-            transform: "scale(0.94)",
-            filter: "blur(12px)",
-            backgroundSize: "cover",
-          }}
         />
+
       </MKBox>
       <MKBox p={3} mt={-1} textAlign="center">
         <MKTypography display="inline" variant="h5" textTransform="capitalize" fontWeight="regular">
           {title}
         </MKTypography>
         <MKBox mt={1} mb={3}>
-          <MKTypography variant="body2" component="p" color="text">
+          <MKTypography variant="body2" component="p" color="inherit">
             {description}
           </MKTypography>
         </MKBox>
@@ -83,12 +76,12 @@ function CenteredBlogCard({ image, title, description, action }) {
 
 // Typechecking props for the CenteredBlogCard
 CenteredBlogCard.propTypes = {
-  image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired, // Image source is required
+  title: PropTypes.string.isRequired, // Title is required
+  description: PropTypes.string.isRequired, // Description is required
   action: PropTypes.shape({
-    type: PropTypes.oneOf(["external", "internal"]).isRequired,
-    route: PropTypes.string.isRequired,
+    type: PropTypes.oneOf(["external", "internal"]).isRequired, // Action type must be "external" or "internal"
+    route: PropTypes.string.isRequired, // Route is required
     color: PropTypes.oneOf([
       "primary",
       "secondary",
@@ -98,9 +91,14 @@ CenteredBlogCard.propTypes = {
       "error",
       "dark",
       "light",
-    ]),
-    label: PropTypes.string.isRequired,
+    ]), // Button color must match these values
+    label: PropTypes.string.isRequired, // Button label is required
   }).isRequired,
+  bgColor: PropTypes.string, // Background color is optional
+};
+
+CenteredBlogCard.defaultProps = {
+  bgColor: colors.background.default, // Default background color
 };
 
 export default CenteredBlogCard;

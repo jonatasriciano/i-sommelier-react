@@ -5,7 +5,7 @@
   to convert the hex code into rgb for using it inside the rgba color format.
  */
 
-// I-Sommelier helper functions
+// i-Sommelier helper functions
 import hexToRgb from "assets/theme/functions/hexToRgb";
 
 function rgba(color, opacity) {

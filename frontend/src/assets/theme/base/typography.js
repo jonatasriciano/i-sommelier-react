@@ -1,21 +1,21 @@
 
 
 /**
- * The base typography styles for the I-Sommelier.
+ * The base typography styles for the i-Sommelier.
  * You can add new typography style using this file.
- * You can customized the typography styles for the entire I-Sommelier using thie file.
+ * You can customized the typography styles for the entire i-Sommelier using thie file.
  */
 
-// I-Sommelier Base Styles
+// i-Sommelier Base Styles
 import colors from "assets/theme/base/colors";
 
-// I-Sommelier Helper Functions
+// i-Sommelier Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { dark } = colors;
 
 const baseProperties = {
-  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  fontFamily: '"Poppins", "Roboto", "Helvetica", "Arial", sans-serif',
   fontFamily2: '"Roboto Slab", sans-serif',
   fontWeightLighter: 100,
   fontWeightLight: 300,

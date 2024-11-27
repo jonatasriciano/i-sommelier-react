@@ -5,18 +5,18 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import MKButton from "components/MKButton";
 
-// I-Sommelier examples
+// i-Sommelier examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 import Information from "pages/LandingPages/AboutUs/sections/Information";
 import Team from "pages/LandingPages/AboutUs/sections/Team";
+
 import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
 // Routes

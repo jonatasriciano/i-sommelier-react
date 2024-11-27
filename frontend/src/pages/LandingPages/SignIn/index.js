@@ -9,28 +9,22 @@ import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
 import Grid from "@mui/material/Grid";
-import MuiLink from "@mui/material/Link";
 
-// @mui icons
-import FacebookIcon from "@mui/icons-material/Facebook";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import GoogleIcon from "@mui/icons-material/Google";
-
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 
-// I-Sommelier example components
+// i-Sommelier example components
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import SimpleFooter from "examples/Footers/SimpleFooter";
 
-// I-Sommelier page layout routes
+// i-Sommelier page layout routes
 import routes from "routes";
 
 // Images
-import bgImage from "assets/images/bg-sign-in-basic.jpeg";
+import bgImage from "assets/images/bg-sign-in-basic.jpg";
 
 function SignInBasic() {
   const [rememberMe, setRememberMe] = useState(false);
@@ -44,8 +38,8 @@ function SignInBasic() {
         action={{
           type: "external",
           route: "https://github.com/jonatasriciano/i-sommelier-react",
-          label: "free download",
-          color: "info",
+          label: "try now",
+          color: "primary",
         }}
         transparent
         light
@@ -74,7 +68,7 @@ function SignInBasic() {
             <Card>
               <MKBox
                 variant="gradient"
-                bgColor="info"
+                bgColor="primary"
                 borderRadius="lg"
                 coloredShadow="info"
                 mx={2}
@@ -86,23 +80,7 @@ function SignInBasic() {
                 <MKTypography variant="h4" fontWeight="medium" color="white" mt={1}>
                   Sign in
                 </MKTypography>
-                <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
-                  <Grid item xs={2}>
-                    <MKTypography component={MuiLink} href="#" variant="body1" color="white">
-                      <FacebookIcon color="inherit" />
-                    </MKTypography>
-                  </Grid>
-                  <Grid item xs={2}>
-                    <MKTypography component={MuiLink} href="#" variant="body1" color="white">
-                      <GitHubIcon color="inherit" />
-                    </MKTypography>
-                  </Grid>
-                  <Grid item xs={2}>
-                    <MKTypography component={MuiLink} href="#" variant="body1" color="white">
-                      <GoogleIcon color="inherit" />
-                    </MKTypography>
-                  </Grid>
-                </Grid>
+
               </MKBox>
               <MKBox pt={4} pb={3} px={3}>
                 <MKBox component="form" role="form">
@@ -125,7 +103,7 @@ function SignInBasic() {
                     </MKTypography>
                   </MKBox>
                   <MKBox mt={4} mb={1}>
-                    <MKButton variant="gradient" color="info" fullWidth>
+                    <MKButton variant="gradient" color="primary" fullWidth>
                       sign in
                     </MKButton>
                   </MKBox>
@@ -140,7 +118,7 @@ function SignInBasic() {
                         fontWeight="medium"
                         textGradient
                       >
-                        Sign up asdasd
+                        Sign up
                       </MKTypography>
                     </MKTypography>
                   </MKBox>

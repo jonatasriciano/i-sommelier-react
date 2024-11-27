@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // @mui material components
 import Tooltip from "@mui/material/Tooltip";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

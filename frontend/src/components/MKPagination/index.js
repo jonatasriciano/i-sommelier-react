@@ -1,11 +1,9 @@
-
-
 import { forwardRef, createContext, useContext, useMemo } from "react";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 
 // Custom styles for MKPagination
@@ -16,9 +14,14 @@ const Context = createContext();
 
 const MKPagination = forwardRef(
   ({ item, variant, color, size, active, children, placement, ...rest }, ref) => {
-    const context = item ? useContext(Context) : null;
-    const paginationSize = context ? context.size : null;
+    // Call useContext unconditionally
+    const context = useContext(Context);
+
+    // Determine if context should be used based on "item"
+    const paginationSize = item && context ? context.size : null;
+
     const paginationProps = useMemo(() => ({ variant, color, size }), []);
+
     let placementValue = "flex-end";
 
     if (placement === "left") {
@@ -33,8 +36,8 @@ const MKPagination = forwardRef(
           <MKPaginationItemRoot
             {...rest}
             ref={ref}
-            variant={active ? context.variant : "outlined"}
-            color={active ? context.color : "secondary"}
+            variant={active ? context?.variant : "outlined"} // Safe access with optional chaining
+            color={active ? context?.color : "secondary"}
             iconOnly
             circular
             ownerState={{ variant, active, paginationSize }}

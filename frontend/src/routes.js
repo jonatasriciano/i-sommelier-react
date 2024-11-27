@@ -1,7 +1,7 @@
 
 
 /** 
-  All of the routes for the I-Sommelier are added here,
+  All of the routes for the i-Sommelier are added here,
   You can add a new route, customize the routes and delete the routes here.
 
   Once you add a new route on this file it will be visible automatically on
@@ -26,13 +26,10 @@
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// @mui icons
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
 import AboutUs from "layouts/pages/landing-pages/about-us";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
@@ -57,13 +54,13 @@ import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    name: "pages",
+    name: "go to",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "landing pages",
+        name: "InnoTech pages",
         collapse: [
           {
             name: "about us",
@@ -74,12 +71,7 @@ const routes = [
             name: "contact us",
             route: "/pages/landing-pages/contact-us",
             component: <ContactUs />,
-          },
-          {
-            name: "author",
-            route: "/pages/landing-pages/author",
-            component: <Author />,
-          },
+          }
         ],
       },
       {
@@ -224,37 +216,6 @@ const routes = [
         ],
       },
     ],
-  },
-  {
-    name: "docs",
-    icon: <Icon>article</Icon>,
-    collapse: [
-      {
-        name: "getting started",
-        description: "All about overview, quick start, license and contents",
-        href: "https://github.com/jonatasricianolearning-lab/react/quick-start/material-kit/",
-      },
-      {
-        name: "foundation",
-        description: "See our colors, icons and typography",
-        href: "https://github.com/jonatasricianolearning-lab/react/colors/material-kit/",
-      },
-      {
-        name: "components",
-        description: "Explore our collection of fully designed components",
-        href: "https://github.com/jonatasricianolearning-lab/react/alerts/material-kit/",
-      },
-      {
-        name: "plugins",
-        description: "Check how you can integrate our plugins",
-        href: "https://github.com/jonatasricianolearning-lab/react/datepicker/material-kit/",
-      },
-    ],
-  },
-  {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/creativetimofficial/material-kit-react",
   },
 ];
 

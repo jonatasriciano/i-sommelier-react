@@ -15,7 +15,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

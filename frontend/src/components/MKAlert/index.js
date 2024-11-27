@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 // @mui material components
 import Fade from "@mui/material/Fade";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 
 // Custom styles for the MKAlert

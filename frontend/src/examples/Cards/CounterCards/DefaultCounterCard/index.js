@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 // react-countup component
 import CountUp from "react-countup";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

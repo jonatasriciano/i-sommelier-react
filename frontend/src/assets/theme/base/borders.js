@@ -1,15 +1,15 @@
 
 
 /**
- * The base border styles for the I-Sommelier.
+ * The base border styles for the i-Sommelier.
  * You can add new border width, border color or border radius using this file.
- * You can customized the borders value for the entire I-Sommelier using thie file.
+ * You can customized the borders value for the entire i-Sommelier using thie file.
  */
 
-// I-Sommelier Base Styles
+// i-Sommelier Base Styles
 import colors from "assets/theme/base/colors";
 
-// I-Sommelier Helper Functions
+// i-Sommelier Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { grey } = colors;

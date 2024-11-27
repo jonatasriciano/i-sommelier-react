@@ -5,11 +5,11 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-// I-Sommelier examples
+// i-Sommelier examples
 import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
 
 // Images

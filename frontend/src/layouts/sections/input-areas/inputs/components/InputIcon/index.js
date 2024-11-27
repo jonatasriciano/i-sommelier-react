@@ -9,7 +9,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 // @mui icons
 import SearchIcon from "@mui/icons-material/Search";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
 

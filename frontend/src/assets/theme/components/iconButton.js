@@ -1,6 +1,6 @@
 
 
-// I-Sommelier Base Styles
+// i-Sommelier Base Styles
 import colors from "assets/theme/base/colors";
 
 const { transparent } = colors;

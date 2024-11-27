@@ -1,10 +1,10 @@
 
 
-// I-Sommelier Base Styles
+// i-Sommelier Base Styles
 import typography from "assets/theme/base/typography";
 import borders from "assets/theme/base/borders";
 
-// I-Sommelier Helper Functions
+// i-Sommelier Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { fontWeightBold, size } = typography;

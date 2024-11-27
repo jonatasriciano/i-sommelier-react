@@ -8,11 +8,11 @@ import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import typography from "assets/theme/base/typography";
 
 function SimpleFooter({ company, links, light }) {

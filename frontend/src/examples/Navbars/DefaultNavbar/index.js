@@ -18,17 +18,19 @@ import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MuiLink from "@mui/material/Link";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 
-// I-Sommelier example components
+// i-Sommelier example components
 import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import breakpoints from "assets/theme/base/breakpoints";
+
+import logo from "assets/images/logo.png";
 
 function DefaultNavbar({ brand, routes, transparent, light, action, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState("");
@@ -463,9 +465,13 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-              {brand}
-            </MKTypography>
+            <MKBox
+              component="img"
+              src={logo}
+              alt={brand}
+              height="35px"
+              
+            />
           </MKBox>
           <MKBox
             color="inherit"
@@ -538,7 +544,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "I-Sommelier",
+  brand: "i-Sommelier",
   transparent: false,
   light: false,
   action: false,

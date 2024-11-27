@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKProgress from "components/MKProgress";
 

@@ -11,7 +11,7 @@ import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

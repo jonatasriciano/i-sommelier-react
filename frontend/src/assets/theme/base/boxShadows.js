@@ -1,15 +1,15 @@
 
 
 /**
- * The base box-shadow styles for the I-Sommelier.
+ * The base box-shadow styles for the i-Sommelier.
  * You can add new box-shadow using this file.
- * You can customized the box-shadow for the entire I-Sommelier using thie file.
+ * You can customized the box-shadow for the entire i-Sommelier using thie file.
  */
 
-// I-Sommelier Base Styles
+// i-Sommelier Base Styles
 import colors from "assets/theme/base/colors";
 
-// I-Sommelier Helper Functions
+// i-Sommelier Helper Functions
 import boxShadow from "assets/theme/functions/boxShadow";
 
 const { black, white, tabs, coloredShadows } = colors;

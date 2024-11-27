@@ -1,10 +1,10 @@
 /* eslint-disable no-param-reassign */
 
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 
-// I-Sommelier examples
+// i-Sommelier examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Routes

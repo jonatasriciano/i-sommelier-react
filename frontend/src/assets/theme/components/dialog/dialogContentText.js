@@ -1,10 +1,10 @@
 
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import typography from "assets/theme/base/typography";
 import colors from "assets/theme/base/colors";
 
-// I-Sommelier helper functions
+// i-Sommelier helper functions
 // import pxToRem from "assets/theme/functions/pxToRem";
 
 const { size } = typography;

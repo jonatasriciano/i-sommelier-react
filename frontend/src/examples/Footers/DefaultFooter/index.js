@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

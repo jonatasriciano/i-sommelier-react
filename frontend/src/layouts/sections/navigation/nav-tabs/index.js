@@ -1,6 +1,6 @@
 
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 
 // Sections components

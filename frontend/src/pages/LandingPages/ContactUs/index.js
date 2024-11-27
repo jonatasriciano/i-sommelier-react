@@ -3,13 +3,13 @@
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
-// I-Sommelier examples
+// i-Sommelier examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
@@ -18,7 +18,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Image
-import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import bgImage from "assets/images/bg-contact-us.png";
 
 function ContactUs() {
   return (

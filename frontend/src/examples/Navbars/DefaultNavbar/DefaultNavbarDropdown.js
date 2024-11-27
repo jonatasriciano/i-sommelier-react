@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import Collapse from "@mui/material/Collapse";
 import Icon from "@mui/material/Icon";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 

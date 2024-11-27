@@ -1,6 +1,6 @@
 
 
-// I-Sommelier pages
+// i-Sommelier pages
 import ContactUs from "pages/LandingPages/ContactUs";
 
 export default function ContactUsPage() {

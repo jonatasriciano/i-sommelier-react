@@ -4,7 +4,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKTypography from "components/MKTypography";
 
 // Images
@@ -14,7 +14,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "I-Sommelier",
+    name: "i-Sommelier",
     image: logoCT,
     route: "/",
   },

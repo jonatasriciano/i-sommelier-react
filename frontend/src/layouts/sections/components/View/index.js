@@ -19,13 +19,13 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Slide from "@mui/material/Slide";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKAlert from "components/MKAlert";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import colors from "assets/theme/base/colors";
 
 function View({ children, code, title, height, ...rest }) {

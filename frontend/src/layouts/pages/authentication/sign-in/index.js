@@ -1,6 +1,6 @@
 
 
-// I-Sommelier pages
+// i-Sommelier pages
 import SignIn from "pages/LandingPages/SignIn";
 
 export default function SignInPage() {

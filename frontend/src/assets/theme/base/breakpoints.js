@@ -1,9 +1,9 @@
 
 
 /**
- * The base breakpoints for the I-Sommelier.
+ * The base breakpoints for the i-Sommelier.
  * You can add new breakpoints using this file.
- * You can customized the breakpoints for the entire I-Sommelier using thie file.
+ * You can customized the breakpoints for the entire i-Sommelier using thie file.
  */
 
 export default {

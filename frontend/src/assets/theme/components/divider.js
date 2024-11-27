@@ -1,9 +1,9 @@
 
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import colors from "assets/theme/base/colors";
 
-// I-Sommelier helper functions
+// i-Sommelier helper functions
 import rgba from "assets/theme/functions/rgba";
 import pxToRem from "assets/theme/functions/pxToRem";
 

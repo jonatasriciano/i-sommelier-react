@@ -1,6 +1,6 @@
 
 
-// I-Sommelier Helper Functions
+// i-Sommelier Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 export default {

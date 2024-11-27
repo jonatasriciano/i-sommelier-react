@@ -4,10 +4,10 @@
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 
-// I-Sommelier examples
+// i-Sommelier examples
 import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";

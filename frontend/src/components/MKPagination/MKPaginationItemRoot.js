@@ -3,7 +3,7 @@
 // @mui material components
 import { styled } from "@mui/material/styles";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKButton from "components/MKButton";
 
 export default styled(MKButton)(({ theme, ownerState }) => {

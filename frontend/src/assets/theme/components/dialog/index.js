@@ -1,6 +1,6 @@
 
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import borders from "assets/theme/base/borders";
 import boxShadows from "assets/theme/base/boxShadows";
 

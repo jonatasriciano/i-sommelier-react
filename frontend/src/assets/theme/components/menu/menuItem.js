@@ -1,11 +1,11 @@
 
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import colors from "assets/theme/base/colors";
 import borders from "assets/theme/base/borders";
 import typography from "assets/theme/base/typography";
 
-// I-Sommelier helper functions
+// i-Sommelier helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { light, text, dark } = colors;

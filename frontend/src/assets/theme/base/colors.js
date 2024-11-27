@@ -1,10 +1,10 @@
 /**
- * The base colors for the I-Sommelier.
+ * The base colors for the i-Sommelier.
  * You can add new colors using this file.
- * You can customize the colors for the entire I-Sommelier using this file.
+ * You can customize the colors for the entire i-Sommelier using this file.
  */
 
-export default {
+const colors = {
   background: {
     default: "#f0f2f5",
   },
@@ -228,7 +228,7 @@ export default {
   },
 
   coloredShadows: {
-    primary: "#BB2700", // Primary shadow color
+    primary: "#BB2700", 
     secondary: "#110e0e",
     info: "#00bbd4",
     success: "#4caf4f",
@@ -244,3 +244,5 @@ export default {
     indicator: { boxShadow: "#ddd" },
   },
 };
+
+export default colors;

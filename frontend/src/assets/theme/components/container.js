@@ -1,9 +1,9 @@
 
 
-// I-Sommelier base styles
+// i-Sommelier base styles
 import breakpoints from "assets/theme/base/breakpoints";
 
-// I-Sommelier helper functions
+// i-Sommelier helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const {

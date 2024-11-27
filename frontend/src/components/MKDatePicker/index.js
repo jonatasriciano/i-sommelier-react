@@ -9,7 +9,7 @@ import Flatpickr from "react-flatpickr";
 // react-flatpickr styles
 import "flatpickr/dist/flatpickr.css";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKInput from "components/MKInput";
 
 function MKDatePicker({ input, ...rest }) {

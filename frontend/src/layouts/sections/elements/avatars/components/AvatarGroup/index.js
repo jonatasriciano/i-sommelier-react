@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MuiAvatarGroup from "@mui/material/AvatarGroup";
 
-// I-Sommelier components
+// i-Sommelier components
 import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
 
