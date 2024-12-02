@@ -7,17 +7,9 @@ import Divider from "@mui/material/Divider";
 
 // i-Sommelier components
 import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
 
 // i-Sommelier examples
 import DefaultReviewCard from "examples/Cards/ReviewCards/DefaultReviewCard";
-
-// Images
-import appleLogo from "assets/images/logos/gray-logos/logo-apple.svg";
-import facebookLogo from "assets/images/logos/gray-logos/logo-facebook.svg";
-import nasaLogo from "assets/images/logos/gray-logos/logo-nasa.svg";
-import vodafoneLogo from "assets/images/logos/gray-logos/logo-vodafone.svg";
-import digitalOceanLogo from "assets/images/logos/gray-logos/logo-digitalocean.svg";
 
 function Information() {
   return (

@@ -28,7 +28,7 @@ services:
     tty: true
 
   db:
-    image: postgres:15 # Usa uma versão específica para evitar incompatibilidades
+    image: postgres:17 # Ajuste para a versão 17 do PostgreSQL
     environment:
       POSTGRES_DB: isommelier
       POSTGRES_USER: admin
